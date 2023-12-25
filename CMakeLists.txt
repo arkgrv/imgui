@@ -29,7 +29,7 @@ file(
 list(FILTER source_files EXCLUDE REGEX "${CMAKE_CURRENT_SOURCE_DIR}/examples/.*")
 list(FILTER source_files EXCLUDE REGEX "${CMAKE_CURRENT_SOURCE_DIR}/misc/freetype/.*")
 
-add_library(${CMAKE_PROJECT_NAME} STATIC ${source_files})
+add_library(imgui STATIC ${source_files})
 
 foreach(source IN LISTS source_list)
     get_filename_component(source_path "${source}" PATH)
